@@ -26,6 +26,8 @@ If you have a tool to add to the list, please let the OSN team know at {{< help-
 
 ### Naming Conventions
 
+For broad compatibility with tools, libraries, and filesystems: use lower-case letters, numbers, spaces, hyphens (`-`), underscores (`_`), and periods (`.`) in file and folder names.  Avoid unnecessary special characters, names that differ only by capitalization, and leading or trailing spaces or periods.
+
 S3 permits many special characters in object names, but some tools and libraries may interpret them differently.  For example, a name containing a plus sign (`+`) may conflict with an otherwise identical name containing a space:
 
 ```text
@@ -40,12 +42,10 @@ test file.txt
 Test File.txt
 ```
 
-Forward slashes (`/`) may be used to separate folders or directories in a path, such as:
+Forward slashes (`/`) may be used to separate "folders" or "directories" in a path, such as:
 
 ```text
 project/data/test file.txt
 ```
 
 However, a forward slash should not be used within the name of an individual file or directory.
-
-For broad compatibility with tools, libraries, and filesystems, use lower-case letters, numbers, spaces, hyphens (`-`), underscores (`_`), and periods (`.`) in file and folder names.  Avoid unnecessary special characters, names that differ only by capitalization, and leading or trailing spaces or periods.
