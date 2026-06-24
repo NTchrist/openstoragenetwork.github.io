@@ -26,7 +26,7 @@ If you have a tool to add to the list, please let the OSN team know at {{< help-
 
 ### Naming Conventions
 
-For broad compatibility with tools, libraries, and filesystems: use lower-case letters, numbers, spaces, hyphens (`-`), underscores (`_`), and periods (`.`) in file and folder names.  Avoid unnecessary special characters, names that differ only by capitalization, and leading or trailing spaces or periods.
+For broad compatibility with tools, libraries, and filesystems: use lower-case letters, numbers, spaces, hyphens (`-`), underscores (`_`), and periods (`.`) in file and folder names.  Avoid unnecessary special characters, names that differ only by capitalization, and leading or trailing spaces or periods.  Deviating from this may result in data that is unreadable in certain circumstances.
 
 S3 permits many special characters in object names, but some tools and libraries may interpret them differently.  For example, a name containing a plus sign (`+`) may conflict with an otherwise identical name containing a space:
 
